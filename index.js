@@ -9,7 +9,6 @@ const photoData = JSON.parse(
     )
 );
 
-const PORT = 3001;
 
 // Initialize our app variable by setting it to the value of express()
 const app = express();
@@ -23,6 +22,6 @@ app.get('/updateData', (req, res) => {
     getData()
 });
 
-app.listen(PORT, () =>
+app.listen(process.env.PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );
