@@ -13,6 +13,11 @@ const photoData = JSON.parse(
 // Initialize our app variable by setting it to the value of express()
 const app = express();
 
+const cors = require('cors');
+app.use(cors({
+    origin: '*'
+}))
+
 app.get('/', (req, res) => res.send('Visit http://localhost:3001/api'));
 
 // res.json() allows us to return JSON instead of a buffer, string, or static file
