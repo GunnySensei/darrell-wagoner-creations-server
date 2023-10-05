@@ -2,6 +2,7 @@
 import express  from 'express';
 import  getData from './utils.js';
 import { readFile } from 'fs/promises';
+import cors from 'cors';
 
 const photoData = JSON.parse(
     await readFile(
@@ -13,7 +14,6 @@ const photoData = JSON.parse(
 // Initialize our app variable by setting it to the value of express()
 const app = express();
 
-const cors = require('cors');
 app.use(cors({
     origin: '*'
 }))
