@@ -25,7 +25,6 @@ class ContactController {
 
   const mailOptions = {
     to: [config.MAIL_TO], // Enter here the email address on which you want to send emails from your
-    customers,
     from: name,
     subject,
     text: message,
