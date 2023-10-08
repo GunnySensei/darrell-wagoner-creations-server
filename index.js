@@ -22,6 +22,8 @@ app.use(cors({
     origin: '*'
 }))
 app.use(upload.none());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.use("/email", routes)
 

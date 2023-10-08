@@ -9,7 +9,7 @@ import ContactController from "../controllers/contact.controllers.js";
 
 const router = express.Router({ mergeParams: true})
 
-router.post("/", validate, (req, res) => {
+router.post("/", (req, res) => {
   const controller = new ContactController(req, res);
   controller.sendContactForm();
 });
