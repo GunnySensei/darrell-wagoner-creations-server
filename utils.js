@@ -2,7 +2,7 @@ import fs  from 'fs';
 import fetch from "node-fetch";
 
 const getData=()=>{
-    fetch('https://api.imgur.com/3/album/RBee9LZ/images',
+    fetch('https://api.imgur.com/3/account/DarrellWagonerCreations/submissions',
     {
       headers : { 
         'Authorization': 'Client-ID 5c7c9cd823f9da7'
